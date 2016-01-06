@@ -1,0 +1,19 @@
+# Show Ethernet Ports
+ifconfig
+
+# Show Ethernet Ports IP Addresses
+ip addr 
+
+# Location of network information
+/etc/network/interfaces
+
+# Restarting Network
+# Restarting network interfaces in Ubuntu 14.04 is not as easy as it should be. 
+# Due to a “feature” in Ubuntu 14.04, service network restart no longer works to restart network interfaces. 
+ifconfig interfacename down 
+ifconfig interfacename up
+
+# Find out what Ethernet card is assigned to which port.  Contains lots of information such as Vendor, Product, Mac Address, etcc
+lshw -class network
+
+
