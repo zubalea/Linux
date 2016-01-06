@@ -4,8 +4,7 @@ ifconfig
 # Show Ethernet Ports IP Addresses
 ip addr 
 
-# Location of network information
-/etc/network/interfaces
+
 
 # Restarting Network
 # Restarting network interfaces in Ubuntu 14.04 is not as easy as it should be. 
@@ -22,3 +21,42 @@ host www.linux.org
 # Download a file from the internet
 wget http://path.to.file
 
+# List active connections to and from system
+netstat -tupl
+
+# Location of network information
+/etc/network/interfaces
+
+# Sample /etc/network/interfaces file content.   
+<--- Start of /etc/network/interfaces -->
+# This file describes the network interfaces available on your system
+# and how to activate them. For more information, see interfaces(5).
+
+# The loopback network interface
+auto lo
+iface lo inet loopback
+
+# Realtek RTL81111GR - Driver r8169 - Has more features than Intel one. 
+# dhcp configuration
+auto p2p1
+iface p2p1 inet dhcp
+
+# Intel I218V - Driver e1000e
+# dhcp configuration
+auto eth0
+iface eth0 inet dhcp
+
+# add bridge interface
+# bridge off p2p1
+iface br0 inet dhcp
+bridge_ports p2p1
+bridge_stp off
+auto br0
+
+# add bridge interface 2
+# bridge off eth0
+iface br1 inet dhcp
+bridge_ports eth0
+bridge_stp off
+auto br1
+<--- End of /etc/network/interfaces -->
