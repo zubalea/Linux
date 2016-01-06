@@ -16,4 +16,9 @@ ifconfig interfacename up
 # Find out what Ethernet card is assigned to which port.  Contains lots of information such as Vendor, Product, Mac Address, etcc
 lshw -class network
 
+# Lookup DNS ip address of the domain name
+host www.linux.org
+
+# Download a file from the internet
+wget http://path.to.file
 
