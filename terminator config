@@ -1,0 +1,66 @@
+[global_config]
+  suppress_multiple_term_dialog = True
+[keybindings]
+[layouts]
+  [[default]]
+    [[[child0]]]
+      fullscreen = False
+      last_active_term = 19c1cc55-cd53-42fa-aa40-0e241ed18e3b
+      last_active_window = True
+      maximised = True
+      order = 0
+      parent = ""
+      position = 0:27
+      size = 1920, 983
+      title = michel.lemay@localhost:~
+      type = Window
+    [[[child1]]]
+      order = 0
+      parent = child0
+      position = 489
+      ratio = 0.5
+      type = VPaned
+    [[[child2]]]
+      order = 0
+      parent = child1
+      position = 956
+      ratio = 0.49921875
+      type = HPaned
+    [[[child5]]]
+      order = 1
+      parent = child1
+      position = 956
+      ratio = 0.49921875
+      type = HPaned
+    [[[terminal3]]]
+      order = 0
+      parent = child2
+      profile = default
+      type = Terminal
+      uuid = 19c1cc55-cd53-42fa-aa40-0e241ed18e3b
+    [[[terminal4]]]
+      order = 1
+      parent = child2
+      profile = default
+      type = Terminal
+      uuid = bc3200b3-b93a-4cce-8645-e6c853cbac3d
+    [[[terminal6]]]
+      order = 0
+      parent = child5
+      profile = default
+      type = Terminal
+      uuid = 5c41427d-959c-4c67-a84f-6f840d473957
+    [[[terminal7]]]
+      order = 1
+      parent = child5
+      profile = default
+      type = Terminal
+      uuid = e4287454-0e56-4257-8baa-7be84807f6bf
+[plugins]
+[profiles]
+  [[default]]
+    background_darkness = 1.11
+    background_image = None
+    foreground_color = "#00ff00"
+    palette = "#000000:#aa0000:#00aa00:#aa5500:#0000aa:#aa00aa:#00aaaa:#aaaaaa:#555555:#ff5555:#55ff55:#ffff55:#5555ff:#ff55ff:#55ffff:#ffffff"
+    scrollback_infinite = True
